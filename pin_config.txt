@@ -1,0 +1,6 @@
+使用済み
+PWM_L	3/2
+PWM_H	3/1
+SR	3/3
+PHASE	3/4
+RESET	
