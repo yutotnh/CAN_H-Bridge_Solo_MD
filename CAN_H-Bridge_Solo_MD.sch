@@ -1444,4 +1444,81 @@ F 3 "~" H 3900 4950 50  0001 C CNN
 	1    3900 4950
 	1    0    0    -1  
 $EndComp
+$Comp
+L SamacSys_Parts:AP7381-50SA-7 IC3
+U 1 1 5E2DF031
+P 9650 2200
+F 0 "IC3" H 10200 2465 50  0000 C CNN
+F 1 "AP7381-50SA-7" H 10200 2374 50  0000 C CNN
+F 2 "SOT96P240X105-3N" H 10600 2300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/AP7381-50SA-7.pdf" H 10600 2200 50  0001 L CNN
+F 4 "LDO Voltage Regulators LDO CMOS LowCurr SOT23 T&R 3K" H 10600 2100 50  0001 L CNN "Description"
+F 5 "1.05" H 10600 2000 50  0001 L CNN "Height"
+F 6 "621-AP7381-50SA-7" H 10600 1900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=621-AP7381-50SA-7" H 10600 1800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Diodes Inc." H 10600 1700 50  0001 L CNN "Manufacturer_Name"
+F 9 "AP7381-50SA-7" H 10600 1600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0101
+U 1 1 5E2DFCDA
+P 10750 2600
+F 0 "#PWR0101" H 10750 2400 50  0001 C CNN
+F 1 "GNDPWR" H 10754 2446 50  0000 C CNN
+F 2 "" H 10750 2550 50  0001 C CNN
+F 3 "" H 10750 2550 50  0001 C CNN
+	1    10750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5E2E38F9
+P 9400 2350
+F 0 "C15" H 9285 2304 50  0000 R CNN
+F 1 "1u" H 9285 2395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9438 2200 50  0001 C CNN
+F 3 "~" H 9400 2350 50  0001 C CNN
+	1    9400 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5E2E6C2C
+P 9200 2450
+F 0 "C14" H 9315 2404 50  0000 L CNN
+F 1 "2.2u" H 9315 2495 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9238 2300 50  0001 C CNN
+F 3 "~" H 9200 2450 50  0001 C CNN
+	1    9200 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9650 2200 9400 2200
+Wire Wire Line
+	9200 2600 9400 2600
+Wire Wire Line
+	10750 2600 10750 2200
+Connection ~ 10750 2600
+Wire Wire Line
+	9200 2300 9650 2300
+Wire Wire Line
+	9400 2500 9400 2600
+Connection ~ 9400 2600
+Wire Wire Line
+	9400 2600 10750 2600
+$Comp
+L power:VCC #PWR011
+U 1 1 5E308F85
+P 9400 2200
+F 0 "#PWR011" H 9400 2050 50  0001 C CNN
+F 1 "VCC" H 9417 2373 50  0000 C CNN
+F 2 "" H 9400 2200 50  0001 C CNN
+F 3 "" H 9400 2200 50  0001 C CNN
+	1    9400 2200
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9200 2300 0    50   Output ~ 0
+MD_3V3
 $EndSCHEMATC
