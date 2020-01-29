@@ -1445,7 +1445,7 @@ F 3 "~" H 3900 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:AP7381-50SA-7 IC3
+L CAN_H-Bridge_Solo_MD-rescue:AP7381-50SA-7-SamacSys_Parts IC3
 U 1 1 5E2DF031
 P 9650 2200
 F 0 "IC3" H 10200 2465 50  0000 C CNN

@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name H-Bridge-MD-rescue)(type Legacy)(uri C:/Users/YUTO/OneDrive/Documents/KiCAD/H-Bridge-MD/H-Bridge-MD-rescue.lib)(options "")(descr ""))
+  (lib (name CAN_H-Bridge_Solo_MD-rescue)(type Legacy)(uri ${KIPRJMOD}/CAN_H-Bridge_Solo_MD-rescue.lib)(options "")(descr ""))
 )
