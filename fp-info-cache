@@ -1,4 +1,4 @@
-16974075044982406
+16975687247107733
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -53165,39 +53165,18 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 4
 4
 PCIe
-BUS_PCIexpress_x1_36_Position
-PCIexpress Bus Edge Connector
-PCIexpress Bus Edge Connector
-0
-70
-36
+BUS_mechaken_PCIexpress_x16
+PCIexpress Bus Edge Connector x1 http://www.ritrontek.com/uploadfile/2016/1026/20161026105231124.pdf#page=70
 PCIe
-BUS_PCIexpress_x4_64_Position
-PCIexpress Bus Edge Connector
-PCIexpress Bus Edge Connector
 0
-127
-64
-PCIe
-BUS_PCIexpress_x8_98_Position
-PCIexpress Bus Edge Connector
-PCIexpress Bus Edge Connector
-0
-196
-98
-PCIe
-BUS_PCIexpress_x16_164_Position
-PCIexpress Bus Edge Connector
-PCIexpress Bus Edge Connector
-0
-329
 164
+20
 PCIe
-BUS_mechaken_PCIexpress_x16_164_Position
-PCIexpress Bus Edge Connector
-PCIexpress Bus Edge Connector
+Socket_mechaken_PCIexpress_x16_164_position
+10018783-10113TLF
+Connector
 0
-329
+164
 20
 Package_BGA
 Analog_BGA-28_4.0x6.25mm_Layout4x7_P0.8mm_Ball0.45mm_Pad0.4
@@ -68726,6 +68705,20 @@ Connector
 98
 98
 SamacSys_Parts
+BD63150AFME2
+BD63150AFM-E2-1
+Integrated Circuit
+0
+38
+38
+SamacSys_Parts
+CAPAE1700X1700N
+EEV-FK1H102M-
+Capacitor Polarised
+0
+2
+2
+SamacSys_Parts
 CAPAE1710X1750N
 16x16.5
 Capacitor Polarised
@@ -68753,6 +68746,13 @@ Switch
 0
 4
 4
+SamacSys_Parts
+QFP80P900X900X160-32N
+STM32F042K6T6TR
+Integrated Circuit
+0
+32
+32
 SamacSys_Parts
 SHDR2W320P716_1X2_1574X813X1588P
 XT60
@@ -68783,7 +68783,7 @@ Integrated Circuit
 8
 SamacSys_Parts
 SOIC127P600X175-16N
-ST SO-16_2
+16-Pin Narrow-Body SOIC_1
 Integrated Circuit
 0
 16
@@ -68809,6 +68809,13 @@ Switch
 0
 8
 8
+SamacSys_Parts
+SOT96P240X105-3N
+AP7381-50SA-7-1
+Integrated Circuit
+0
+3
+3
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
