@@ -450,12 +450,12 @@ VCP_RX
 $Comp
 L Device:LED D1
 U 1 1 5D5ECBC3
-P 1000 3300
-F 0 "D1" V 1039 3450 50  0000 C CNN
-F 1 "LED" V 948 3450 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 1000 3300 50  0001 C CNN
-F 3 "~" H 1000 3300 50  0001 C CNN
-	1    1000 3300
+P 1000 2850
+F 0 "D1" V 1039 3000 50  0000 C CNN
+F 1 "LED" V 948 3000 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 1000 2850 50  0001 C CNN
+F 3 "~" H 1000 2850 50  0001 C CNN
+	1    1000 2850
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -708,10 +708,6 @@ Text GLabel 5300 1250 0    50   Output ~ 0
 DIP_SW_3
 Text GLabel 5300 1150 0    50   Output ~ 0
 DIP_SW_4
-Text GLabel 1850 2350 2    50   Input ~ 0
-MD0_LED_H
-Text GLabel 1850 2450 2    50   Input ~ 0
-MD0_LED_L
 Text GLabel 3200 2900 0    50   Input ~ 0
 DIP_SW_4
 Text GLabel 3200 2800 0    50   Input ~ 0
@@ -809,9 +805,9 @@ F 3 "" H 6300 5100 50  0001 C CNN
 $EndComp
 Text GLabel 4200 2200 2    50   Output ~ 0
 IC_PWMH_0
-Text GLabel 4200 2600 2    50   Output ~ 0
-MD0_LED_H
 Text GLabel 4200 2500 2    50   Output ~ 0
+MD0_LED_H
+Text GLabel 4200 2600 2    50   Output ~ 0
 MD0_LED_L
 $Comp
 L Device:LED D4
@@ -1210,36 +1206,36 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 5E0C5428
-P 1300 2850
-F 0 "R2" H 1370 2896 50  0000 L CNN
-F 1 "2.2k" H 1370 2805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1230 2850 50  0001 C CNN
-F 3 "~" H 1300 2850 50  0001 C CNN
-	1    1300 2850
-	-1   0    0    1   
+P 1300 3300
+F 0 "R2" H 1370 3346 50  0000 L CNN
+F 1 "2.2k" H 1370 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1230 3300 50  0001 C CNN
+F 3 "~" H 1300 3300 50  0001 C CNN
+	1    1300 3300
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5E0C542E
-P 1000 2850
-F 0 "R1" H 1070 2896 50  0000 L CNN
-F 1 "2.2k" H 1070 2805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 930 2850 50  0001 C CNN
-F 3 "~" H 1000 2850 50  0001 C CNN
-	1    1000 2850
-	-1   0    0    1   
+P 1000 3300
+F 0 "R1" H 1070 3346 50  0000 L CNN
+F 1 "2.2k" H 1070 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 930 3300 50  0001 C CNN
+F 3 "~" H 1000 3300 50  0001 C CNN
+	1    1000 3300
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1300 3450 1150 3450
 $Comp
 L Device:LED D2
 U 1 1 5D5EBAF7
-P 1300 3300
-F 0 "D2" V 1339 3112 50  0000 C CNN
-F 1 "LED" V 1248 3112 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 1300 3300 50  0001 C CNN
-F 3 "~" H 1300 3300 50  0001 C CNN
-	1    1300 3300
+P 1300 2850
+F 0 "D2" V 1339 2662 50  0000 C CNN
+F 1 "LED" V 1248 2662 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 1300 2850 50  0001 C CNN
+F 3 "~" H 1300 2850 50  0001 C CNN
+	1    1300 2850
 	0    -1   -1   0   
 $EndComp
 Connection ~ 1150 3450
@@ -1521,4 +1517,8 @@ F 3 "" H 9400 2200 50  0001 C CNN
 $EndComp
 Text GLabel 9200 2300 0    50   Output ~ 0
 MD_3V3
+Text GLabel 1850 2350 2    50   Input ~ 0
+MD0_LED_H
+Text GLabel 1850 2450 2    50   Input ~ 0
+MD0_LED_L
 $EndSCHEMATC
