@@ -215,7 +215,7 @@ $EndComp
 NoConn ~ 7800 5050
 NoConn ~ 7800 5750
 $Comp
-L SamacSys_Parts:A3921KLPTR-T IC3
+L CAN_H-Bridge_Solo_MD-rescue:A3921KLPTR-T-SamacSys_Parts IC3
 U 1 1 5DC023BF
 P 7800 4450
 F 0 "IC3" H 8500 4715 50  0000 C CNN
@@ -691,17 +691,6 @@ Text GLabel 4200 2600 2    50   Output ~ 0
 MD0_LED_L
 Wire Wire Line
 	5450 3000 5450 3300
-$Comp
-L Regulator_Linear:LD1117S33TR_SOT223 U1
-U 1 1 5DEBD597
-P 1350 1950
-F 0 "U1" H 1200 2075 50  0000 C CNN
-F 1 "LDL1117S33R_SOT223-4" H 1350 2075 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1350 2150 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 1450 1700 50  0001 C CNN
-	1    1350 1950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR01
 U 1 1 5E09E0FF
@@ -1372,7 +1361,7 @@ IC_3V3
 Text GLabel 4300 4200 1    50   Input ~ 0
 IC_3V3
 $Comp
-L SamacSys_Parts:SI8650AB-B-IS1 IC2
+L CAN_H-Bridge_Solo_MD-rescue:SI8650AB-B-IS1-SamacSys_Parts IC2
 U 1 1 5DC0259A
 P 7250 3050
 F 0 "IC2" H 7473 3315 50  0000 L CNN
@@ -1401,4 +1390,15 @@ Wire Wire Line
 Connection ~ 5900 1350
 Wire Wire Line
 	5900 1350 5900 1450
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U1
+U 1 1 5DEBD597
+P 1350 1950
+F 0 "U1" H 1200 2075 50  0000 C CNN
+F 1 "AP2210N-3.3TRG1" H 1350 2075 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1350 2150 50  0001 C CNN
+F 3 "" H 1450 1700 50  0001 C CNN
+	1    1350 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
