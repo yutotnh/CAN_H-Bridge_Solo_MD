@@ -991,28 +991,15 @@ F 3 "~" H 9550 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 1600 7000 1600
-Wire Wire Line
-	7000 1600 7000 1800
-Wire Wire Line
 	7000 1800 7050 1800
-Connection ~ 7000 1800
 Wire Wire Line
 	7050 1700 6800 1700
-Wire Wire Line
-	8150 1600 8200 1600
 Wire Wire Line
 	8150 1800 8200 1800
 Wire Wire Line
 	8400 1700 8150 1700
-Wire Wire Line
-	8200 1600 8200 1800
-Connection ~ 8200 1800
 NoConn ~ 3200 2100
 NoConn ~ 3200 2200
-NoConn ~ 4200 1600
-NoConn ~ 4200 1700
-NoConn ~ 4200 1900
 NoConn ~ 4200 2000
 NoConn ~ 4200 2400
 NoConn ~ 3200 3000
@@ -1401,4 +1388,71 @@ F 3 "" H 1450 1700 50  0001 C CNN
 	1    1350 1950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 602E5899
+P 6200 2450
+F 0 "J4" H 6280 2492 50  0000 L CNN
+F 1 "Conn_01x05" H 6280 2401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6200 2450 50  0001 C CNN
+F 3 "~" H 6200 2450 50  0001 C CNN
+	1    6200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 602E8414
+P 6000 2650
+F 0 "#PWR0102" H 6000 2400 50  0001 C CNN
+F 1 "GND" H 6005 2477 50  0000 C CNN
+F 2 "" H 6000 2650 50  0001 C CNN
+F 3 "" H 6000 2650 50  0001 C CNN
+	1    6000 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 6031EF32
+P 5900 2175
+F 0 "#PWR0103" H 5900 2025 50  0001 C CNN
+F 1 "+5V" H 5915 2348 50  0000 C CNN
+F 2 "" H 5900 2175 50  0001 C CNN
+F 3 "" H 5900 2175 50  0001 C CNN
+	1    5900 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2175 5900 2350
+Wire Wire Line
+	5900 2350 6000 2350
+Wire Wire Line
+	4875 1600 4200 1600
+Wire Wire Line
+	4800 1700 4200 1700
+Wire Wire Line
+	4725 2550 4725 1900
+Wire Wire Line
+	4725 1900 4200 1900
+Wire Wire Line
+	4725 2550 6000 2550
+Text Label 5800 2250 0    50   ~ 0
+ENC_B
+Text Label 5800 2450 0    50   ~ 0
+ENC_A
+Text Label 5800 2550 0    50   ~ 0
+ENC_X
+Wire Wire Line
+	4800 1700 4800 2250
+Wire Wire Line
+	4800 2250 6000 2250
+Wire Wire Line
+	4875 1600 4875 2450
+Wire Wire Line
+	4875 2450 6000 2450
+Connection ~ 7000 1800
+Wire Wire Line
+	7000 1600 7000 1800
+Wire Wire Line
+	7050 1600 7000 1600
+NoConn ~ 8150 1600
 $EndSCHEMATC
