@@ -419,7 +419,7 @@ F 3 "~" H 1700 2100 50  0001 C CNN
 	1    1700 2100
 	-1   0    0    1   
 $EndComp
-Text GLabel 3200 1600 0    50   Input ~ 0
+Text GLabel 3100 1600 0    50   Input ~ 0
 NRST
 Text GLabel 4200 3100 2    50   Input ~ 0
 VCP_RX
@@ -470,12 +470,12 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 5D5AB267
-P 2650 3100
-F 0 "R1" V 2443 3100 50  0000 C CNN
-F 1 "10k" V 2534 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2580 3100 50  0001 C CNN
-F 3 "~" H 2650 3100 50  0001 C CNN
-	1    2650 3100
+P 2550 1800
+F 0 "R1" V 2343 1800 50  0000 C CNN
+F 1 "10k" V 2434 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2480 1800 50  0001 C CNN
+F 3 "~" H 2550 1800 50  0001 C CNN
+	1    2550 1800
 	0    1    1    0   
 $EndComp
 $Comp
@@ -495,9 +495,9 @@ Wire Wire Line
 	9900 5550 10150 5550
 Wire Wire Line
 	9200 5550 9900 5550
-Text GLabel 3200 2500 0    50   Output ~ 0
+Text GLabel 3100 2600 0    50   Output ~ 0
 IC_PHASE_0
-Text GLabel 3200 2400 0    50   Output ~ 0
+Text GLabel 3100 2500 0    50   Output ~ 0
 IC_SR_0
 Text GLabel 4200 2100 2    50   Output ~ 0
 IC_RESET_0
@@ -565,7 +565,7 @@ Text Label 4800 3600 0    50   ~ 0
 CAN_TD
 Text Label 4550 3500 0    50   ~ 0
 CAN_RD
-Text Label 2850 3100 0    50   ~ 0
+Text Label 2750 1800 0    50   ~ 0
 BOOT
 $Comp
 L Switch:SW_DIP_x04 S1
@@ -607,11 +607,11 @@ Text GLabel 5300 1250 0    50   Output ~ 0
 DIP_SW_3
 Text GLabel 5300 1150 0    50   Output ~ 0
 DIP_SW_4
-Text GLabel 3200 2900 0    50   Input ~ 0
+Text GLabel 3100 3000 0    50   Input ~ 0
 DIP_SW_4
-Text GLabel 3200 2800 0    50   Input ~ 0
+Text GLabel 3100 2900 0    50   Input ~ 0
 DIP_SW_3
-Text GLabel 3200 2700 0    50   Input ~ 0
+Text GLabel 3100 2800 0    50   Input ~ 0
 DIP_SW_2
 Wire Wire Line
 	4200 2700 4550 2700
@@ -621,19 +621,19 @@ Text GLabel 4200 1800 2    50   Output ~ 0
 VCP_TX
 Connection ~ 3700 3300
 Wire Wire Line
-	3200 3100 2800 3100
+	3100 1800 2700 1800
 $Comp
-L MCU_ST_STM32F0:STM32F042K6Tx U2
+L MCU_ST_STM32F3:STM32F303K8Tx U2
 U 1 1 5DA7A10A
 P 3700 2300
 F 0 "U2" H 3700 1211 50  0000 C CNN
 F 1 "STM32F303K8" H 3700 1120 50  0000 C CNN
 F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3300 1400 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 3700 2300 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00092070.pdf" H 3700 2300 50  0001 C CNN
 	1    3700 2300
 	1    0    0    -1  
 $EndComp
-Text GLabel 3200 2600 0    50   Input ~ 0
+Text GLabel 3100 2700 0    50   Input ~ 0
 DIP_SW_1
 Wire Wire Line
 	5750 3100 5300 3100
@@ -998,11 +998,8 @@ Wire Wire Line
 	8150 1800 8200 1800
 Wire Wire Line
 	8400 1700 8150 1700
-NoConn ~ 3200 2100
-NoConn ~ 3200 2200
 NoConn ~ 4200 2000
 NoConn ~ 4200 2400
-NoConn ~ 3200 3000
 Text GLabel 10700 5250 2    50   Input ~ 0
 V5
 Wire Wire Line
@@ -1079,12 +1076,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR024
 U 1 1 5D5AAC2B
-P 2500 3100
-F 0 "#PWR024" H 2500 2850 50  0001 C CNN
-F 1 "GND" H 2505 2927 50  0000 C CNN
-F 2 "" H 2500 3100 50  0001 C CNN
-F 3 "" H 2500 3100 50  0001 C CNN
-	1    2500 3100
+P 2400 1800
+F 0 "#PWR024" H 2400 1550 50  0001 C CNN
+F 1 "GND" H 2405 1627 50  0000 C CNN
+F 2 "" H 2400 1800 50  0001 C CNN
+F 3 "" H 2400 1800 50  0001 C CNN
+	1    2400 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1455,4 +1452,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 1600 7000 1600
 NoConn ~ 8150 1600
+NoConn ~ 3100 2200
+NoConn ~ 3100 2300
+NoConn ~ 3100 3100
 $EndSCHEMATC
